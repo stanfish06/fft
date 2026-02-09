@@ -1,4 +1,7 @@
-all: libbindings.a
+all: crate
+
+crate: libbindings.a
+	cargo build
 
 bindings.o: bindings.c
 	gcc -c -o bindings.o bindings.c
