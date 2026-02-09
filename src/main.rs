@@ -25,5 +25,7 @@ pub fn construct_dft_matrix(n: u64) -> Vec<Complex<f64>> {
 }
 
 fn main() {
-    construct_dft_matrix(4);
+    let dft_matrix = construct_dft_matrix(4);
+    let f_real = vec![-1.0, 0.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0];
+    let f_complex: Vec<Complex<f64>> = f_real.iter().map(|x| x.into()).collect();
 }
