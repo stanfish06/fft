@@ -6,10 +6,10 @@
 typedef struct Matrix {
     size_t nrow;
     size_t ncol;
-    float data[];
+    float *data;
 } Matrix;
 
-Matrix* create_matrix(int nrow, int ncol, float data[]); 
+Matrix* create_matrix(size_t nrow, size_t ncol, float *data); 
 void free_matrix(Matrix* m);
 Matrix* matrix_dot(Matrix* a, Matrix *b);
 
