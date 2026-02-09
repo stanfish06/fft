@@ -6,7 +6,7 @@
 typedef struct Matrix {
     size_t nrow;
     size_t ncol;
-    float *data;
+    float *data; // manage data from rust
 } Matrix;
 
 Matrix* create_matrix(size_t nrow, size_t ncol, float *data); 
