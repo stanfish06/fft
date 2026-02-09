@@ -16,7 +16,6 @@ void free_matrix(Matrix* m) {
     m = NULL;
 }
 
-
 Matrix* matrix_dot(Matrix* a, Matrix *b) {
     size_t sz_c_data = sizeof(float) * a->nrow * b->ncol;
     float *c_data = malloc(sz_c_data);
